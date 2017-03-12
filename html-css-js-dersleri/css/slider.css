@@ -1,0 +1,11 @@
+a { text-decoration:none}
+ul,li{padding:0;margin:0; list-style-type:none;}
+#slider{width:600px;height:240px;background-color:ccc;border:1px solid #ddd; position:relative;overflow:hidden;}
+#slider ul li{ list-style-type:none;float:left;}
+#slider ul#resim li a img{width:600px;height:240px;}
+#slider ul#buton{ position:absolute;bottom:10px;left:10px;}
+#slider ul#buton li{float:left}
+#slider ul#buton li a{display:block;padding:3px 6px;color:#FFFFFF;margin-right:3px}
+#slider ul#buton li.aktif a {background-color: rgb(20, 100, 173);
+border: 1px solid #ddd;
+border-radius: 5px;}

@@ -1,0 +1,415 @@
+/* CSS Document */
+
+.koltuklar{
+	width:785px; height:400; float:left; margin:30px;
+}
+
+/*son konu divlerinin üzerine geldiklerinde çıkacak divler*/
+.uclu-koltukici{
+	width:390px; height:150px; float:left; margin-top:100px;
+	background-color:#CCC; opacity:0;
+}
+.ikili-koltukici{
+	width:260px; height:120px; float:left; margin-top:30px;
+	background-color:#ccc; opacity:0;
+}
+
+.uclukoltuk-one{
+	width:390px; height:250px; float:left;
+	background-image:url(../image/html5css3.png);
+	background-size:390px 250px;
+	background-repeat:no-repeat;
+}
+
+.uclukoltuk-one:hover .uclu-koltukici{
+	display: block;
+	background-color:#000; opacity:0.8;
+}
+.koltuklar a{
+	text-decoration:none;
+	font:Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+.uclu-koltukici p{
+	display: none;
+    background-color:#000;
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.uclukoltuk-one:hover .uclu-koltukici p{
+	display: block;
+	background-color:#000;
+}
+.uclukoltuk-two{
+	width:390px; height:250px; float:left;
+	margin-left:2px;
+	background-image:url(../image/html5-temel.png);
+	background-size:390px 250px;
+	background-repeat:no-repeat;           /* w3c, Firefox 4.0, ie9  */
+}
+
+.uclukoltuk-two:hover .uclu-koltukici{
+	display: block;
+	background-color:#000; opacity:0.8;
+}
+
+.uclukoltuk-two:hover .uclu-koltukici p{
+	display: block;
+	background-color:#000;
+}
+
+
+.ikilikoltuk-one{
+	width:260px; height:150px; float:left;
+}
+.ikilikoltuk-two{
+	width:260px; height:150px; float:left; margin-left:2px;
+}
+.ikilikoltuk-three{
+	width:260px; height:150px; float:left; margin-left:2px;
+}
+
+.ikilikoltuk-one{
+	background-image:url(../image/html5-audio.png);
+	background-size:260px 150px;
+	background-repeat:no-repeat;
+}
+
+.ikilikoltuk-one:hover .ikili-koltukici{
+	display: block;
+	background-color:#000; opacity:0.8;
+}
+.ikili-koltukici p{
+	display: none;
+    background-color:#000;
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.ikilikoltuk-one:hover .ikili-koltukici p{
+	display: block;
+	background-color:#000;
+}
+
+.ikilikoltuk-two{
+	background-image:url(../image/css-giris.png);
+	background-size:260px 150px;
+	background-repeat:no-repeat;
+}
+
+.ikilikoltuk-two:hover .ikili-koltukici{
+	display: block;
+	background-color:#000; opacity:0.8;
+}
+
+.ikilikoltuk-two:hover .ikili-koltukici p{
+	display: block;
+	background-color:#000;
+}
+
+.ikilikoltuk-three{
+	background-image:url(../image/css-yazim.png);
+	background-size:260px 150px;
+	background-repeat:no-repeat;
+}
+
+.ikilikoltuk-three:hover .ikili-koltukici{
+	display: block;
+	background-color:#000; opacity:0.8;
+}
+
+.ikilikoltuk-three:hover .ikili-koltukici p{
+	display: block;
+	background-color:#000;
+}
+
+
+.ahr{
+	width:780px;  height:30px; float:left; margin:0 30px 30px 30px;
+}
+
+/*.stripes{
+	width:710px; height:15px; float:left; margin:4px 0 0 4px;
+	background:  /* On "top"
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #ccc 10px,
+    #ccc 20px
+  ),
+  / on "bottom"
+  linear-gradient(
+    to bottom,
+    #eee,
+    #999
+  );
+}*/
+
+.stripes{
+	width:710px; height:15px; float:left; margin:4px 0 0 4px; background-color:#F88C00;
+}
+.baslik{
+	width:65px; height:27px; float:left;
+}
+
+.baslik a{
+	text-decoration:none; color:#444; size:15px; font-size:large;
+}
+
+.dersler{
+	width:780px; height:450; float:left; margin:0 30px 30px 30px;
+}
+.dersler a{
+	text-decoration:none; color:#000; border-radius:3px;
+	font:13px Tahoma, Geneva, sans-serif;
+}
+.dersler li{
+	list-style:none; padding:0px; margin:0px;
+}
+
+.first-ders-css{
+	width:350px; height:380px; float:left;
+}
+
+.first-ders-css-resim{
+	width:350px; height:190px; float:left; background-image:url(../image/css-giris.png); background-size:350px 190px;
+}
+
+.first-ders-css-icerik{
+	width:350px; height:190px; float:left;
+}
+
+.diger-dersler-css{
+	width:350px; height:380px; float:left; margin-left:19px;
+}
+
+.diger-dersler-css-kalip{
+	width:350px; height:95px; float:left;
+}
+.diger-dersler-css-resim-one{
+	width:150px; height:95px; float:left; background-image:url(../image/css-yazim.png); background-size:150px 95px;
+}
+.diger-dersler-css-resim-one:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-css-icerik-one{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-css-resim-two{
+	width:150px; height:95px; float:left; background-image:url(../image/css-ekleme.png); background-size:150px 95px;
+}
+.diger-dersler-css-resim-two:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-css-icerik-two{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-css-resim-three{
+	width:150px; height:95px; float:left; background-image:url(../image/css-zemin.jpg); background-size:150px 95px;
+}
+.diger-dersler-css-resim-three:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-css-icerik-three{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-css-resim-four{
+	width:150px; height:95px; float:left; background-image:url(../image/css-text.jpg); background-size:150px 95px;
+}
+.diger-dersler-css-resim-four:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-css-icerik-four{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+
+.big-image-animate{
+	width:350px; height:190px; float:left;  display:none; background-image:url(../image/page-icon.png); background-size:128px 128px; background-repeat:no-repeat; background-position:center;
+}
+
+.small-image-animate{
+	width:150px; height:95px; float:left; display:none; background-image:url(../image/page-icon-64x64.png);
+	background-size:64px 64px;  background-repeat:no-repeat; background-position:center;
+}
+
+.first-ders-css-icerik a{
+	text-decoration:none; color:#fff; background-color:#F88C00; border-radius:3px; padding:5px; margin-left:-40px;
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.first-ders-css-icerik a:hover{
+	background-color:#666;
+}
+.first-ders-css-resim:hover{
+	background-color:#fff; opacity:.8;
+}
+
+.first-ders-css-resim:hover .big-image-animate{
+	display:block;
+}
+
+/*HTML*/
+
+.first-ders-html{
+	width:350px; height:380px; float:left;
+}
+
+.first-ders-html-resim{
+	width:350px; height:190px; float:left; background-image:url(../image/html5-ders.png); background-size:350px 190px;
+}
+
+.first-ders-html-icerik{
+	width:350px; height:190px; float:left;
+}
+
+.diger-dersler-html{
+	width:350px; height:380px; float:left; margin-left:19px;
+}
+
+.diger-dersler-html-kalip{
+	width:350px; height:95px; float:left;
+}
+.diger-dersler-html-resim-one{
+	width:150px; height:95px; float:left; background-image:url(../image/html5-temel.png); background-size:150px 95px;
+}
+.diger-dersler-html-resim-one:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-html-icerik-one{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-html-resim-two{
+	width:150px; height:95px; float:left; background-image:url(../image/html5-audio.png); background-size:150px 95px;
+}
+.diger-dersler-html-resim-two:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-html-icerik-two{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-html-resim-three{
+	width:150px; height:95px; float:left; background-image:url(../image/html5-grafik.jpg); background-size:150px 95px;
+}
+.diger-dersler-html-resim-three:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-html-icerik-three{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-html-resim-four{
+	width:150px; height:95px; float:left; background-image:url(../image/html5-location.jpg);  background-size:150px 95px;
+}
+.diger-dersler-html-resim-four:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-html-icerik-four{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.first-ders-html-icerik a{
+	text-decoration:none; color:#fff; background-color:#F88C00; border-radius:3px; padding:5px; margin-left:-40px;
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.first-ders-html-icerik p{
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.first-ders-html-icerik a:hover{
+	background-color:#666;
+}
+.first-ders-html-resim:hover{
+	background-color:#fff; opacity:.8;
+}
+
+.first-ders-html-resim:hover .big-image-animate{
+	display:block;
+}
+
+/* javascript */
+
+.first-ders-js{
+	width:350px; height:380px; float:left;
+}
+
+.first-ders-js-resim{
+	width:350px; height:190px; float:left; background-image:url(../image/js-giris.png); background-size:350px 190px;
+}
+
+.first-ders-js-icerik{
+	width:350px; height:190px; float:left;
+}
+
+.diger-dersler-js{
+	width:350px; height:380px; float:left; margin-left:19px;
+}
+
+.diger-dersler-js-kalip{
+	width:350px; height:95px; float:left;
+}
+.diger-dersler-js-resim-one{
+	width:150px; height:95px; float:left; background-image:url(../image/js-eklemek.png); background-size:150px 95px;
+}
+.diger-dersler-js-resim-one:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-js-icerik-one{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-js-resim-two{
+	width:150px; height:95px; float:left; background-image:url(../image/js-degisken.png); background-size:150px 95px;
+}
+.diger-dersler-js-resim-two:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-js-icerik-two{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-js-resim-three{
+	width:150px; height:95px; float:left; background-image:url(../image/js-karar.png); background-size:150px 95px;
+}
+.diger-dersler-js-resim-three:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-js-icerik-three{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.diger-dersler-js-resim-four{
+	width:150px; height:95px; float:left; background-image:url(../image/jquery-slider.png);  background-size:150px 95px;
+}
+.diger-dersler-js-resim-four:hover .small-image-animate{
+	display:block;
+}
+.diger-dersler-js-icerik-four{
+	width:195px; height:95px; float:left; background-color:#CCC; opacity:0.8; padding-left:5px;
+}
+
+.first-ders-js-icerik a{
+	text-decoration:none; color:#fff; background-color:#F88C00; border-radius:3px; padding:5px; margin-left:-40px;
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.first-ders-js-icerik p{
+	font:13px Tahoma, Geneva, sans-serif;
+}
+
+.first-ders-js-icerik a:hover{
+	background-color:#666;
+}
+.first-ders-js-resim:hover{
+	background-color:#fff; opacity:.8;
+}
+
+.first-ders-js-resim:hover .big-image-animate{
+	display:block;
+}

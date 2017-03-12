@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>HTML GİRİŞ</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="index.html" class="selected">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="../js-dersleri/index.html">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/html5-ders.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>HTML 5 Giriş</h2>
+<p>
+HTML5'in ne olduğunu açıklamadan önce size kısaca HTML'in ne olduğundan bahsedeyim:</p>
+
+<p>Hyper Text Markup Language kelimelerinin, Türkçe ifade ile "Zengin Metin İşaretleme Dili"nin baş harflerinin kısaltması olan HTML, CERN'de müteahhit olarak çalışan Tim Berners-Lee tarafından 80'li yıllarda geliştirilen, 90'lı yıllarda ise adının konduğu bir web standartıdır. Tim Berners-Lee aynı zamanda açılımı WorldWideWeb Consortium olan W3C'nin de kurucusudur. Bu kısım sizin için önemli çünkü W3C bugün tüm web tarayıcılarındaki standartı belirleyen uluslararası bir organizasyondur.</p>
+
+<p>HTML ilk çıktığında yapılan sayfalar sadece metinlerden oluşuyordu ve görsel olarak çok da bir şey ifade etmiyordu. Etiketler küçük ya da büyük harfle yazılabiliyordu. Daha sonra XML ve HTML'in kompozit hale getirilmiş şekli eXtensible HTML, dilimizdeki karşılığıyla "Genişletilebilir HTML" olan XHTML, W3C tarafından bir standart olarak oluşturuldu. XHTML'de kurallar daha katıydı. Örneğin; bütün etiketler küçük harfle yazılmalıydı. DOCTYPE olarak bilinen ve tüm sitelerin kaynak kodlarında ilk sırayı alan "belge tipi bildirimi" ile birlikte hiyerarşik bir söz dizimi oluşturuldu. XHTML'deki standartların daha katı olmasına rağmen tarayıcılardaki uyum sorunu yavaş yavaş çözülmeye başlamıştı.</p>
+
+<p>XHTML de tek başına görsel olarak bir şey ifade etmiyordu. '96 yılının sonunda CSS'in ilk sürümü yayınlandı ve artık siteler görsel olarak daha kullanışlı ve esnek bir hâle geldi.</p>
+
+<p>HTML geliştikçe gelişti ve yıllar geçtikçe CSS'in yeni özellikleri ile birlikte dördüncü sürüme kadar geldi. HTML4 her ne kadar yeterli gibi gözükse de CSS ile yazılan fazladan kodlar hatalara sebep oluyordu ve bunu önlemek için HTML5 geliştirildi.</p>
+
+<p>HTML5 ile gelen esnek yapı kod hatalarını en aza indiriyor hatta görmezden geliyordu. XHTML'deki küçük – büyük harf duyarlılığı kalkmıştı. Bununla birlikte çok fazla kod sorunu kısmen çözüldü. CSS ile olan uyum sorunu düzeltildi ve beraberinde getirdiği yeni etiketler ile hem içerik ve görsele hem de arama motorlarına büyük kolaylıklar sağladı.</p>
+
+<p>HTML5 hâlâ geliştirilme aşamasında olsa da bugün birçok web tasarımcısı artık bu yeni sürümü tercih etmektedir. Kısmen daha az kod yazma olanağı verse de HTML5 asıl gücünü PHP, ASP, ASP.net gibi web programlama dillerinden, JavaScript betik dilinden ve CSS'ten almaktadır.</p>
+
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

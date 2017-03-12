@@ -1,0 +1,18 @@
+/* CSS Document */
+.makale-resim{
+	width:500px; height:300px; float:left; margin:10px 0 0 170px;
+}
+
+.makale-icerik{
+	width:700px; height:auto; float:left; margin:10px 0 0 70px;
+}
+
+body p{
+	font:16px Arial, Helvetica, sans-serif;
+}
+li{
+	font:15px Arial, Helvetica, sans-serif;
+}
+textarea{
+	font:16px Arial, Helvetica, sans-serif; background-color:#333; color:#FFF; width:700px;
+}

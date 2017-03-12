@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>HTML 5 LOCATİON ELEMANLARI</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="index.html" class="selected">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="../js-dersleri/index.html">Javacsript</a></li>
+<li><a href="../hakkimda.html" >Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/html5-location.jpg" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>HTML 5 LOCATİON ELEMANLARI</h2>
+<p>HTML5'te, Geolocation API'ları sayesinde, sayfanızı ziyaret edenler, kendi fiziksel konumlarını sizin web uygulamanızla paylaşabilirler. Bu tür uygulamalarda tarayıcı, kullanıcının konumunu paylaşmak isteyip istemediğini soracaktır. O andaki konum bilgisi ve ziyaretçinin IP adresi, en yakın kablosuz ağ erişim noktasından alınır.</p>
+
+<p>Bulunduğunuz enlem ve boylamı, JavaScript yardımıyla belirleyip arka planda web sunucusuna gönderebilirsiniz. Sonuç olarak belirlenen konumu harita üzerinde gösterebilir, belli bir adresi arayabilirsiniz.</p>
+<p>Kullanıcı konum bilgilerini almak için Javascript kullanımına girceğimiz için bu uygulamaları daha sonraki Javascript derslerimizde bahsedeceğiz.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

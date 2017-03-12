@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<link rel="stylesheet" type="text/css" href="../css/slider.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../javascript/slider.js"></script>
+<title>JQuery Slider Yapımı</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="index.html" class="selected">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/jquery-slider.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>JQuery kullanarak slider yapımı</h2>
+<p>Merhaba arkadaşlar bugün size jquery ile slider yapımını anlatacağım bu uygulamamızda
+zamana bağlı olarak resimler değişecek resmin üzerine gelince geçiş duracak resmin
+üzerinden çıktığımız zaman tekrar devam edecek.</p>
+<p>Geçelim uygulama ile ilgili teknik bilgilere</p>
+<p>öncelikle jquery ile slider uygulaması yapabilmek için jquery'de hide(),removeClass(),addClass,fadeIn(),length,setI nterval,hover()
+gibi fonksiyonların ne işe yaradıklarını anlatarak başlayalım.</p>
+<p>Hide() = seçili nesnenin gizlenmesini sağlar,
+
+removeClass()=seçilen nesneden parantezler arasına yazılan class özelliklerinin silinmesini sağlar,
+
+addClass()=remove classın tersi bir işlem yapar yani seçilen nesneye parantezler arasında yazdıgımız class isminin özelliklerini verir,
+
+fadeIn()=hide fonksiyonunun gizlediği nesneyi tekrar görünür hale getirmeyi sağlar aynı zamanda show() fonksiyonuda kullanılabilir aralarındaki fark, efekt farkı,
+
+length=seçilen nesnenin uzunluğunu belirler</p>
+<textarea style="height:200px">
+  <ul>
+
+  <li>1.li</li>
+
+  <li>2.li</li>
+
+  <li>3.li</li>
+
+  </ul>
+</textarea>
+<p>Böyle bir liste yapısına sahip olduğumuz zaman bunun uzunluğunu  "var li_sayisi=$("ul li").length();" jquery komutu ile alabilriz.</p>
+<p>setInterval()= belirttiğimiz işlemi belirli zaman aralıklarında yapmayı sağlar. biz bu özelliği sliderde geçişler için kullanacağız yani her 5 saniyede bir resimlerin değişmesini sağlayacağız.</p>
+<p>hover()=bu fonksiyon ise üzerine gelince yapılacak işlemler dizisini belirtir.(üzerine gelince ve üzerinden gidince)</p>
+<p>Canlı örnek;</p>
+<div id="slider">
+<ul id="resim">
+
+<li><a href="#"><img src="../image/resim1.png" /></a></li>
+<li><a href="#"><img src="../image/resim2.png" /></a></li>
+<li><a href="#"><img src="../image/resim3.png" /></a></li>
+</ul>
+    <ul id="buton">
+
+
+    </ul>
+</div>
+<br/>
+<p>Örnek uygulamasında gerekli yerlere açıklama satırları eklenmiştir. İndirmek için <a href="../source/jquery5.rar">tıklayın</a>.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

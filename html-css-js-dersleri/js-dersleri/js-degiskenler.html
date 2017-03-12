@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>Javascript Değişkenler</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="index.html" class="selected">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/js-degisken.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>Javascript Değişkenler</h2>
+<p>Merhaba. Javascript’e giriş yazısından sonra en temel şeylerden devam ediyorum. Bu yazıda javascript’te değişken kullanımını anlatacağım. Değişkenin ne olduğunu bildiğinizi düşünerek doğrudan tanımlamalara geçiyorum.</p>
+<p>Değişken, bir programlama dilinin en önemli veri yapılarından biridir. Bir değişkene ait iki temel bilgi mevcuttur:</p>
+<ol>
+  <li>Değişkenin adı</li>
+  <li>Değişkenin değeri</li>
+</ol>
+<p>Değişkenin adı için, JavaScript'te bazı isimlendirme kuralları mevcuttur:</p>
+<ul>
+  <li>Değişken adı, herhangi bir JavaScript anahtar sözcüğü ile (yani bir deyim adı, operatör adı, fonksiyon adı vb) aynı olmamalıdır. Örneğin if, do, case gibi isimler değişken adı olamaz.</li>
+  <li>Değişken adı daima bir harfle başlamalıdır.</li>
+  <li>Değişken adı en fazla 255 karakter uzunluğunda olmalıdır.</li>
+  <li>Değişken adı için kullanılabilecek olan karakterler; harfler (yani İngiliz alfabesindeki A-Z arasındaki 26 harf), rakamlar (0-9), alt çizgi karakteri (_) ve $ sembolü olabilir.</li>
+  <li>Değişken adı içinde boşluk bulunmamalıdır.</li>
+  <li>Değişken adı içinde özel karakterler (+,-,* vb) kullanılmamalıdır.</li>
+</ul>
+<p>JavaScript dili, case-sensitive'dir yani büyük-küçük harf ayrımı vardır.</p>
+<textarea style="height:80px">
+  Java_Script
+  JAVA_SCRIPT
+  java_script
+</textarea>
+<p>Javascript büyük küçük harf ayrımı yaptığı için yukardaki 3 değişken birbirinden farklıdır.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

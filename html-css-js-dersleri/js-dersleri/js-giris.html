@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>Javascript GİRİŞ</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="index.html" class="selected">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/js-giris.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>Javascript Nedir ?</h2>
+<p>JavaScript, yaygın olarak web tarayıcılarında kullanılmakta olan bir betik dilidir. JavaScript ile yazılan istemci tarafı betikler sayesinde tarayıcının kullanıcıyla etkileşimde bulunması, tarayıcının kontrol edilmesi, asenkron bir şekilde sunucu ile iletişime geçilmesi ve web sayfası içeriğinin değiştirilmesi gibi işlevler sağlanır. JavaScript, Node.js gibi platformlar sayesinde sunucu tarafında da yaygın olarak kullanılmaktadır.</p>
+<p>lk olarak bir Netscape çalışanı olan Brendan Eich tarafından geliştirilen ve 1997 yılından beri bir ECMA standardı olan JavaScript, günümüzde Mozilla Vakfı öncülüğünde özgür yazılım topluluğu tarafından geliştirilmekte ve bakımı yapılmaktadır.</p>
+<p>Web sayfalarının görünümünün mükemmelleştirilmesi, işlevselliğinin artırılması ve dinamik web sayfaları tasarlanması amacıyla JavaScript, HTML kodu içinde gömülü olarak (embedded) kullanılabilir. JavaScript, bir programlama dili disiplini ve özelliklerine sahiptir.</p>
+<h2>Javascript ile Java Arasındaki farklar</h2>
+<h3>Javascript</h3>
+<p>İstemci (client) tarafından (örn. web tarayıcı) yorumlanır (derlenmez).</p>
+<p>Nesneye dayalı bir dildir. Nesne tipleri arasında farklılık yoktur. Herhangi bir nesneye yeni özellik ve metotlar dinamik olarak eklenir. Nesneye yönelik teorinin miras alma (inheritance) özelliği prototip mekanizmasıyla gerçekleştirilir.</p>
+<p>Değişken veri tip bildirimi mekanizması yoktur.</p>
+<p>Dinamik bağlama mekanizması kullanılır yani nesneye verilen referanslar çalışma zamanında (run time) kontrol edilir.</p>
+<h3>Java</h3>
+<p>Derlenmiş bytecode denilen program istemcide çalıştırılır.</p>
+<p>Nesneye yönelik bir dildir. Nesneler çeşitli sınıflara ayrılmıştır ve miras alma mekanizması, sınıf hiyerarşisi sayesinde gerçekleştirilir. Sınıf ve sınıf örneklerine özellik ve metotlar dinamik olarak eklenemez.</p>
+<p>Değişken tip bildirimi zorunludur.</p>
+<p>Statik bağlama mekanizması kullanılır yani nesne referansları derleme zamanında (compile time) kontrol edilir.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>CSS GİRİŞ</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="index.html" class="selected">Css</a></li>
+<li><a href="../js-dersleri/index.html">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/css-giris.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>CSS Giriş</h2>
+<p>CSS öğrenmeye başlarken ön koşul, temel düzeyde HTML ve XHTML bilgisidir. CSS, Cascading Style Sheets (Basamaklı Biçim Sayfaları) ifadesinden oluşturulmuş bir kısaltmadır. Biçimler (styles), HTML elemanlarının nasıl görüntüleneceğini tanımlar.</p>
+<h3>HTML ve stil sorunu</h3>
+<p>HTML'de, bir belgeyi biçimlendirmek için kullanılabilecek etiketler mevcut değildir. HTML etiketleri, bir belgenin içeriğini tanımlamak için kullanılır</p>
+<p>HTML 3.2'den itibaren, &lt;font&gt; etiketinin kullanılması, yazıtipi ve renk ayarlarının her sayfaya eklenmesi için kullanılınca, uzun ve pahalı geliştirme süreçleri oluştu. Bu problemi çözmek için, World Wide Web Konsorsiyumu (W3C), CSS'i oluşturdu. HTML 4.0 sürümünde, tüm biçimlendirme işlemleri HTML belgesinden uzaklaştırılarak ayrı bir CSS dosyasında saklandı. Bugün, tüm modern web tarayıcıları CSS dosyalarını desteklemektedir.</p>
+<h3>CSS dosyalarında neler saklanır</h3>
+<p>CSS, HTML elemanlarının nasıl görüntüleneceğini tanımlar. Stiller normal olarak .css dosyalarında saklanır. Dış biçim sayfaları (external style sheets), web sayfasındaki bütün sayfaların genel çerçevesini ve görünümünü değiştirme olanağı sağlar; üstelik bu sadece tek bir dosya üzerinde yapılacak değişikliklerle mümkündür.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

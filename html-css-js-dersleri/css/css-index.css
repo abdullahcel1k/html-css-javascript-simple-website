@@ -1,0 +1,147 @@
+/* CSS Document */
+.ahr{
+	width:780px;  height:30px; float:left; margin:30px;
+}
+
+h3{
+	font:Tahoma, Geneva, sans-serif; 
+}
+.stripes{
+	width:710px; height:15px; float:left; margin:4px 0 0 4px; background-color:#F88C00;
+}
+.baslik{
+	width:65px; height:27px; float:left;
+}
+body h3{
+	font:20px Verdana, Geneva, sans-serif
+}
+
+body a{
+	text-decoration:none; color:#000; size:15px; font-size:large;
+}
+body p{
+	font:Tahoma, Geneva, sans-serif; font-size:16px;
+}
+
+body li{
+	list-style:none;
+}
+
+.icerik{
+	width:780px; height:350px; float:left; margin:0 30px 0 30px;
+}
+.icerik-baslik-one{
+	width:760px; height:50px; float:left; margin:10px 0 0 10px;
+}
+
+.icerik-resim-one{
+	width:400px; height:250px; float:left; margin:10px 0 0 10px; background-image:url(../image/css-text.jpg); background-size:400px 250px;
+}
+
+.icerik-resim-one:hover .big-image-animate{
+	display:block; opacity:0.5;
+}
+
+.icerik-metin-one{
+	width:350px; height:250px; float:left; margin:10px 0 0 10px;
+}
+.icerik-metin-one a{
+	background-color:#F88C00; border-radius:3px; padding:3px; margin-left:-43px; color:#fff;
+}
+.icerik-metin-one a:hover{
+	background-color:#333;
+}
+.big-image-animate{
+	width:400px; height:250px; float:left;  display:none; background-image:url(../image/page-icon.png); background-color:#fff; background-size:128px 128px; background-repeat:no-repeat; background-position:center;
+}
+
+.icerik-baslik-two{
+	width:760px; height:50px; float:left; margin:10px 0 0 10px;
+}
+
+.icerik-resim-two{
+	width:400px; height:250px; float:left; margin:10px 0 0 10px; background-image:url(../image/css-zemin.jpg); background-size:400px 250px;
+}
+
+.icerik-resim-two:hover .big-image-animate{
+	display:block; opacity:0.5;
+}
+
+.icerik-metin-two{
+	width:350px; height:250px; float:left; margin:10px 0 0 10px;
+}
+.icerik-metin-two a{
+	background-color:#F88C00; border-radius:3px; padding:3px; margin-left:-43px; color:#fff;
+}
+.icerik-metin-two a:hover{
+	background-color:#333;
+}
+
+
+.icerik-baslik-three{
+	width:760px; height:50px; float:left; margin:10px 0 0 10px;
+}
+
+.icerik-resim-three{
+	width:400px; height:250px; float:left; margin:10px 0 0 10px; background-image:url(../image/css-ekleme.png); background-size:400px 250px;
+}
+
+.icerik-resim-three:hover .big-image-animate{
+	display:block; opacity:0.5;
+}
+
+.icerik-metin-three{
+	width:350px; height:250px; float:left; margin:10px 0 0 10px;
+}
+.icerik-metin-three a{
+	background-color:#F88C00; border-radius:3px; padding:3px; margin-left:-43px; color:#fff;
+}
+.icerik-metin-three a:hover{
+	background-color:#333;
+}
+
+
+.icerik-baslik-four{
+	width:760px; height:50px; float:left; margin:10px 0 0 10px;
+}
+
+.icerik-resim-four{
+	width:400px; height:250px; float:left; margin:10px 0 0 10px; background-image:url(../image/css-yazim.png); background-size:400px 250px;
+}
+
+.icerik-resim-four:hover .big-image-animate{
+	display:block; opacity:0.5;
+}
+
+.icerik-metin-four{
+	width:350px; height:250px; float:left; margin:10px 0 0 10px;
+}
+.icerik-metin-four a{
+	background-color:#F88C00; border-radius:3px; padding:3px; margin-left:-43px; color:#fff;
+}
+.icerik-metin-four a:hover{
+	background-color:#333;
+}
+
+
+.icerik-baslik-five{
+	width:760px; height:50px; float:left; margin:10px 0 0 10px;
+}
+
+.icerik-resim-five{
+	width:400px; height:250px; float:left; margin:10px 0 0 10px; background-image:url(../image/css-giris.png); background-size:400px 250px;
+}
+
+.icerik-resim-five:hover .big-image-animate{
+	display:block; opacity:0.5;
+}
+
+.icerik-metin-five{
+	width:350px; height:250px; float:left; margin:10px 0 0 10px;
+}
+.icerik-metin-five a{
+	background-color:#F88C00; border-radius:3px; padding:3px; margin-left:-43px; color:#fff;
+}
+.icerik-metin-five a:hover{
+	background-color:#333;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>HTML 5 GRAFİK ELEMANLARI</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="index.html" class="selected">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="../js-dersleri/index.html">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/html5-grafik.jpg" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>HTML 5 Grafik Elamanları</h2>
+<p>HTML5, grafik elemanlarını çizebilmek için &lt;canvas&gt; ve &lt;svg&gt; elemanlarını barındırır.</p>
+<h3>&lt;canvas&gt;</h3>
+<p>&lt;canvas&gt; elemanını, özellikle JavaScript kullanarak, farklı çizimler yaratmak için kullanabilirsiniz.</p><p>&lt;canvas&gt; elemanı, grafikler için sadece bir taşıyıcıdır. Grafik çizimi ise, JavaScript gibi bir betik (script) dili yardımıyla gerçekleştirilir.</p>
+<p>&lt;canvas&gt; elemanı grafikleri çözünürlüğe (resolution) bağlıdır. Her çözünürlükte farklı kalitede görüntülenir. Olay yönetici desteği mevcut değildir. Metin yazımı düşük kalitededir. Grafik yoğunluklu oyunlar için önerilir. Sonuçta oluşan görüntü PNG ya da JPG dosyası olarak saklanabilir.</p>
+<p>&lt;canvas&gt; elemanını kullanacaksanız, aşağıdaki özellikleri de atamanız tavsiye edilir:</p>
+<ul>
+<li><b>id: </b>JavaScript kodunuzdan, &lt;canvas&gt;elemanına erişebilmek için bu elemana bir id değeri atamalısınız.</li>
+<li><b>width: </b>&lt;canvas&gt; elemanının genişliği için gereklidir.</li>
+<li><b>height: </b>&lt;canvas&gt; elemanının yüksekliği için gereklidir.</li>
+</ul>
+<img src="../image/canvas-ornek.png" width="700" height="400"/>
+<h3>&lt;canvas&gt; elemanının kordinat sistemi</h3>
+<p>&lt;canvas&gt; elemanının tanımladığı koordinat sistemi aşağıdaki gibidir:</p>
+<img src="../image/canvas-kordinat.png"/>
+<p>Aşağıdaki kod parçasında, <b>fillRect(x, y , genislik, yukseklik)</b> komutu ile içi dolu olan, sol üst köşesi (x,y)'de olan, genişliği ve yüksekliği verilen bir dikdörtgenin nasıl çizildiğini görebilirsiniz:</p>
+<img src="../image/fillrect-ornek.png" width="700"  height="200" />
+<p>Bu örneğimizde x=10 y=20 noktalaraından başlayan 100x200 lük bir mavi diktörtgen çizdirdik.</p>
+<p>Yukarda da gördüğünüz üzere, &lt;canvas&gt; elemanının, getContext adlı bir DOM metodu mevcuttur. getContext(‘2d'), HTML5 nesnesi içinde hazır bir ifadedir; çizimlerin farklı özellik ve metodlarına erişmenizi sağlar.</p>
+<p>Aşağıdaki JavaScript metodlarını kullanarak nasıl "doğru" çizileceğini de görebiliriz:</p>
+<ul>
+<li><b>moveTo(x,y):</b> Doğrunun başlangıç noktasını belirler.</li>
+<li><b>lineTo(x,y):</b> Doğrunun bitiş noktasını belirler.</li>
+<li><b>stroke():</b> Doğruyu çizer.</li>
+</ul>
+<img src="../image/line-ornek.png" width="700" height="300" />
+<img src="../image/line-ornek-cikti.png" width="700" height="197" />
+<h3>svg Elemanı</h3>
+<p>Scalable Vector Graphics (Ölçeklenebilir Vektör Grafikleri), XML'de, iki boyutlu grafiklerin (2D) ve grafik uygulamalarının tanımlanması konusunda kullanılan bir dildir. &lt;svg&gt; etiketi de bu dosyaların HTML5'te kullanılmasına olanak veren etikettir.</p>
+
+<p>SVG dosyalarında her eleman ve her özellik, canlandırılabilir (animate). Grafiklerin büyültüp küçültülmesi ile de görüntü kalitesi bozulmaz. SVG, genellikle sütun grafiği (bar chart) ve X,Y koordinatlarında 2D grafikler oluşturmak için kullanılır.</p>
+<p>HTML5 doğrudan &lt;svg&gt; etiketini kullanarak bu grafikleri web sayfanıza gömebilir.</p>
+<img src="../image/svg-ornek.png" width="700" height="200" />
+<img src="../image/svg-ornek-cikti.png" width="700" height="200" />
+<p>Svg biçimindeki resimler oyunlar için yeterli değildir, daha çok harita vb uygulamalarda kullanılır.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

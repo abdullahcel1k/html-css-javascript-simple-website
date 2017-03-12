@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>CSS METİN İŞLEMLERİ</title>
+</head>
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="index.html" class="selected">Css</a></li>
+<li><a href="../js-dersleri/index.html">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/css-yazim.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>CSS Metin İşlemleri</h2>
+<p>Metinlerin özellikleri CSS kullanılarak değiştirilebilir.</p>
+<h3>Metin rengi(Text color)</h3>
+<p>Renk özelliği, bir metnin rengini atamak için kullanılır. CSS'te renk atama,</p>
+<ul>
+<li>bir HEX değerle: "#ff0ee0",</li>
+<li>bir RGB (red-green-blue, kırmızı-yeşil-mavi) değerle: "rgb(200,10,50)",</li>
+<li>ya da bir renk adı belirtilerek gerçekleştirilebilir.</li>
+</ul>
+<p>Bir sayfa için varsayılan renk, body seçicisi ile tanımlanır.</p>
+<p>p{</p><p>color: #000;</p><p>}</p>
+<h3>Metnin yerleştirilmesi</h3>
+<p>Text-align özelliği, metnin yatay yerleşimi için kullanılır. Metin ortalanabilir (centered), sola ya da sağa yanaşık olabilir veya ayrılan yere göre kendini ayarlayabilir.</p>
+<p>p {</p><p>text-align: left;</p><p>}</p>
+<h3>Metin dekorasyonu</h3>
+<p>Text-decoration özelliği, metin içine bir dekorasyon ekleme ya da metinden bir dekorasyonu uzaklaştırma amacıyla kullanılır. text-decoration özelliği, genelde tasarım amacıyla bağlantılardan alt çizgileri uzaklaştırmak için kullanılır.</p>
+<p>a {</p><p>text-decoration: none;</p><p>}</p>
+<h3>Metin dönüşümü</h3>
+<p>Metin dönüşüm (text-transform) özelliği, metin içinde büyük harf ve küçük harf karakterleri belirlemek için kullanılır. Ya karakterler büyük harfe veya küçük harfe çevrilir ya da her kelimenin ilk harfi büyük harf yapılır.</p>
+<p>p{</p><p>text-transform: uppercase;</p><p>}</p>
+<p>p{</p><p>text-transform: lowercase;</p><p>}</p>
+<p>p{</p><p>text-transform: capitalize;</p><p>}</p>
+<h3>Metin girintileme (Text Indentation)</h3>
+<p>Text-indent özelliği, metnin ilk satırının ne kadar içeriden yazılacağını belirler.</p>
+<p>p{</p><p>text-indent: 40px;</p><p>}</p>
+<h3>Metin özellikleri</h3>
+<table width="619" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th width="167" scope="col">Özellik</th>
+    <th width="431" scope="col">Anlamı</th>
+  </tr>
+  <tr>
+    <td>color</td>
+    <td>Metnin rengini atama işlemini gerçekleştirir.</td>
+  </tr>
+  <tr>
+    <td>direction</td>
+    <td>Metnin yazma yönünü belirler.</td>
+  </tr>
+  <tr>
+    <td>letter-spacing</td>
+    <td>Metindeki karakterler arasındaki boşlukları artırır ya da azaltır.</td>
+  </tr>
+  <tr>
+    <td>line-height</td>
+    <td>Satır yüksekliğini atama işlemini gerçekleştirir.</td>
+  </tr>
+  <tr>
+    <td>text-align</td>
+    <td>Metnin yatay konumlandırılmasını belirler.</td>
+  </tr>
+  <tr>
+    <td>text-decoration</td>
+    <td>Metne eklenecek dekorasyonu belirler.</td>
+  </tr>
+  <tr>
+    <td>text-indent</td>
+    <td>Bir metin bloğundaki ilk satırın ne kadar içerden başlayacağını belirler.</td>
+  </tr>
+  <tr>
+    <td>text-shadow</td>
+    <td>Metne eklenecek gölge etkisini belirler.</td>
+  </tr>
+  <tr>
+    <td>text-transform</td>
+    <td>Metnin büyük-küçük harf durumunu belirler.</td>
+  </tr>
+  <tr>
+    <td>vertical-align</td>
+    <td>Bir elemanın düşey yerleşimini belirler.</td>
+  </tr>
+  <tr>
+    <td>white-space</td>
+    <td>Eleman içinde alfabe dışı karakterlerin nasıl işlem göreceğini belirler.</td>
+  </tr>
+  <tr>
+    <td>word-spacing</td>
+    <td>Bir metinde kelimeler arasında bulunan boşluk sayısını artırır ya da azaltır.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

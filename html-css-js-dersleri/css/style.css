@@ -1,0 +1,77 @@
+/* CSS Document */
+body{
+	background-image:url(../image/background.png);
+}
+
+/*menuyu scrool bara göre aşağı inirmek için tanımlanan class*/
+.f-menu-ul{ z-index: 999; position: fixed; left:0;top:0; margin:0px auto auto 255px;}
+
+/* textarea nesnelerimize yazı girilmesini önlemek amacı ile*/
+textarea{
+	pointer-events: none;
+}
+.ev{
+	width:840px; height:auto; margin:15px auto;
+}
+
+.cati{
+	width:840px; height:150px; float:left;
+}
+
+.banner{
+	width:840px; height:100px; float:left;
+	background-color:#333;
+}
+.banner h2{
+	color:#FFF;
+}
+
+.menu{
+	width:840px; height:50px; float:left; background:#333;
+}
+
+.menu nav{
+	margin: 0; padding: 0; list-style: none;
+	background-color:#333;
+}
+.menu nav li{
+	float:left;
+}
+.menu nav li a{
+	display:block; width:168px; height:35px; text-decoration:none; text-align:center; font:13px Tahoma, Geneva, sans-serif; color:#FFFFFF; padding:15px 0 0 0;
+}
+.menu-cizgi{
+	width:840px; height:5px; float:left;
+	background-color:#F88C00;
+}
+.menu nav li a.selected{
+	text-decoration:none; background:#F88C00;
+}
+
+/* menu classınn içinde ki sırasız listedeki listenin içerisnde a tagın yani linkin üstüne gelinmişse*/
+.menu nav li a:hover{
+ 	text-decoration:none; font-size:21px
+}
+::selection{
+	background: #F9A386;
+    color: #fff;
+    text-shadow: none;
+}
+
+.salon{
+	width:840px; height:auto; float:left; background-color:#fff; margin:30px 0 0 0;
+}
+.bodrum{
+	width:840px; height:120px; float:left; background:#333; margin:15px auto;
+}
+.telif{
+	width:500px; height:80px; float:left; padding-top:20px;
+}
+
+.iletisim{
+	width:340px; height:80px; float:left; padding-top:20px;
+}
+.bodrum-cizgi{
+	width:840px; height:5px; float:left;
+	background-color:#F88C00;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>CSS ZEMİN ÖZELLİKLERİ</title>
+</head>
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="index.html" class="selected">Css</a></li>
+<li><a href="../js-dersleri/index.html">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/css-zemin.jpg" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>CSS Zemin Özellikleri</h2>
+<p>CSS zemin özellikleri, bir elemanın zemin özel tanımlamak için kullanılır. Bu özellikler;</p>
+<ul>
+<li>Zemin rengi,</li>
+<li>Zemin Görseli,</li>
+<li>Zemin tekrarı,</li>
+<li>Zemin ekleri,</li>
+<li>Zemin pozisyonu'dur.</li>
+</ul>
+<h3>Zemin rengi</h3>
+<p>Bir elemanın zemininin rengini belirler. Sayfanın zemin rengi, body kısmında tanımlanır.</p>
+<p>body{</p><p>background-color: #000;</p><p>}</p>
+<p>Burdaki renk kodu hexadecimal olarak girilmiştir renk geçişlerini toplamda 3 farklı yöntem ile çözebiliriz:</p>
+<ul>
+<li>Bir HEX değeri: "#de0420"</li>
+<li>Bir RGB değeri: "rgb(100,50,220)"</li>
+<li>Bir renk adı: red, blue vb.</li>
+</ul>
+<h3>CSS Zemin Resmi</h3>
+<p>Zemin resmi özelliği, elemanın zeminini oluşturacak görseli belirler. Normal olarak görsel zeminde tekrarlanır yani tüm zemini kaplar. Zemin resmi aşağıdaki gibi atanır:</p>
+<p>body{</p><p>background-image: url("arkaplan.png");</p><p>}</p>
+<img src="../image/css-background-image-ekleme.png" width="700px" height="300"  />
+<img src="../image/css-background-image-ekleme-ornek.png"  width="700" height="250"/>
+<p>Bir resmi arkaplan resmi olarak ekleyebileceğimiz gibi html derslerinde anlattığım gibi &lt;img&gt; tagı ilede ekleyebiliriz arasındaki fark ise img olarak eklediğimiz resmin üzerine bişi ekleyemeyiz fakat burda arkaplan olarak eklediğim resmin üzerinde bir başlık görebiliyorsunuz.</p>
+<h3>Zemin resminin yatay ve dikey tekrarı</h3>
+<p>Varsayılan olarak zemin resmi özelliği (background-image property) bir görseli sayfa içinde hem yatay hem de dikey olarak tekrarlar. Bazı resimlerin sadece yatay ya da dikey olarak tekrarlanması istenebilir. Eğer zemin resmi yatay olarak tekrarlanacaksa aşağıdaki gibi bir kod yazılmalıdır:</p>
+<p>body {</p><p>background-image: url("arkaplan.png");</p><p>background-repeat: repeat-x;</p><p>}</p>
+<img src="../image/css-background-image-repeat.png" width="700" height="250"/>
+<h3>Zemin kısayol (background shorthand) özelliği</h3>
+<p>Yukarıda bahsedilen çeşitli özellikleri sadece background sözcüğü ile kısa ve toplu bir şekilde ifade etmek de mümkündür:</p>
+<p>body {</p><p>background: #fffeee url("arkaplan.png") no-repeat left top;</p><p>}</p>
+<p>Shorthand özelliği kullanıldığı zaman, özellik değerlerinin sırası aşağıdaki gibidir:</p>
+<ol>
+<li>background-color</li>
+<li>background-image</li>
+<li>background-repeat</li>
+<li>background-attachment</li>
+<li>background-position</li>
+</ol>
+<p>Aşağıdaki tabloda zemin özelliklerinin tümü listelenmiştir:</p>
+<table width="629" border="1" cellspacing="1" cellpadding="5" style="font:font:15px Arial, Helvetica, sans-serif;">
+  <tr>
+    <th width="165" scope="col">Özellik</th>
+    <th width="417" scope="col">Açıklama</th>
+  </tr>
+  <tr>
+    <td>background</td>
+    <td>Bütün zemin özelliklerini tek bir bildiride gerçekleştirir.</td>
+  </tr>
+  <tr>
+    <td>background-attachment</td>
+    <td>Zemin resmi sabit mi yoksa sayfanın diğer kısmında hareket edecek mi bunu belirler.</td>
+  </tr>
+  <tr>
+    <td>background-color</td>
+    <td>Bir elemanın zemin rengini belirler.</td>
+  </tr>
+  <tr>
+    <td>background-image</td>
+    <td>Bir eleman için zemin resmini belirler.</td>
+  </tr>
+  <tr>
+    <td>background-position</td>
+    <td>Zemin resminin başlangıç pozisyonunu belirler.</td>
+  </tr>
+  <tr>
+    <td>background-repeat</td>
+    <td>Zemin resminin nasıl tekrarlanacağını belirler.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

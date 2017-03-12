@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>Javascript'i Web Sitelerine Eklemek</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="index.html" class="selected">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/js-eklemek.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>Javascript’i web sitelerine eklemek</h2>
+<p>Javascript dosyaları bir web sitesine iki şekilde eklenir. Birincisi satıriçi(inline), ikincisi ayrı bir javascript dosyası hazırlayıp harici olarak eklemek.</p>
+<p>inline olarak kullanıma bir örnek;</p>
+
+<textarea style="height:330px">
+  <html>
+  <head>
+  <title>Merhaba Dünya!</title>
+  	<script>
+  		function merhaba() //merhaba isimli fonksiyonu deklare ediyoruz
+  		{ //bu, fonksiyonun başlama işareti
+  			alert ("Merhaba Dünya!") //fonksiyonun komutu ve komutun gerektirdiği metin
+  		} //bu fonksiyonun bitme işareti
+  	</script>
+  </head>
+  <body>
+  	<b>Merhaba Dünya</b><br>
+  	<form>
+  		<button onclick=merhaba()>TIKLAYINI!</button>
+  	</form>
+  </body>
+  <html>
+</textarea>
+<p>Aynı script'i başka bir .js uzantılı dosyaya ekleyip dışardan bu dosyayı ekleyebiliriz.</p>
+<p>Örneğin yukardaki scripti merhaba.js adlı dosya olarak kaydedelim;</p>
+<textarea style="height:80px">
+  function merhaba() {
+	alert ("Merhaba Dünya! Sene 2011")
+  }
+</textarea>
+<p>Şimdi bu dosyamızı web sayfamızda çağıralım;</p>
+<textarea style="height:295px">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<title>Merhaba Dünya!</title>
+<!-- dosyayı eklediğimiz kısım -->
+<script src="merhaba.js">
+</script>
+</head>
+<bodyY>
+	<b>Merhaba Dünya</b><br>
+	<form>
+		<input type="submit" name="button1" value="TIKLAYIN!" onclick="merhaba()">
+	</form>
+</body>
+</html>
+</textarea>
+<p>Yukarıda kullandığımız her iki yöntem ile de aynı sonucu alırız. Harici javascript dosyası ile eklemenin avantajları vardır;</p>
+<ul>
+  <li>Bir dosya ile tüm sitedeki javascript dosyalarını idare ederiz ve güncellemeleri tek dosya ile daha kolay yaparız.</li>
+  <li>Sayfa daha hızlı yüklenir, tek dosya ön belleğe alınınca diğer sayfalarda tekrar tekrar yüklenmediği için sayfalar daha hızlı açılır.</li>
+<ul>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

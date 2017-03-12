@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/makaleler.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="../image/icon.png" />
+<title>Javascript Karar Yapıları</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="../index.html">Anasayfa</a></li>
+<li><a href="../html-dersleri/index.html">Html5</a></li>
+<li><a href="../css-dersleri/index.html">Css</a></li>
+<li><a href="index.html" class="selected">Javacsript</a></li>
+<li><a href="../hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="../image/js-karar.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>Javascript Karar Yapıları</h2>
+<p>Diğer programlama dillerinde olduğu gibi JavaScriptte de karar yapıları için if else yapısı kullanılır. If else yapısında belirtilen şartın doğru olup olmadığı kontrol edilir, eğer şart sağlanıyor ise if deyiminden sonra yer alan parantez içi kodlar çalışır, şart sağlanmıyor ise else deyiminden sonraki pazantez içindeki kodlar çalışır.</p>
+<textarea style="height:210px">
+  <script type="text/javascript">
+  if (şart)
+  {
+      // şart sağlanırsa burdaki kodlar çalışır.
+  }
+  else
+  {
+      // şart sağlanmaz ise burdaki kodlar çalışır.
+  }
+  </script>
+</textarea>
+<p>Birden fazla şartın olduğu durumlarda birden fazla if yazılabilir. Şimdi diyelim ki WEB sayfamızda şöyle bir script yazmak istiyoruz. Saat baz alınarak eğer saatlerimiz 06-10 arası ise Günaydın, 10-18 arası ise iyi günler, 18-21 arası ise iyi akşamlar, 21-06 arası ise iyi geceler yazdıran bir script oluşturalım.</p>
+<textarea style="height:420px">
+  <script type="text/javascript">
+var zaman = new Date();
+var saat = zaman.getHours();
+
+if (saat>6 && saat<10)
+{
+    alert("Günaydın");
+}
+if (saat>10 && saat<18)
+{
+    alert("İyi Günler");
+}
+if (saat>18 && saat<21)
+{
+    alert("İyi Akşamlar");
+}
+else
+{
+    alert("İyi Geceler");
+}
+
+</script>
+</textarea>
+<p>Burada zaman adında bir Date nesnesi oluşturdum daha sonra bu nesnem Date
+  tipinde olduğu için bu nesnemin GetHours özelliği ile sistem saatinin saat değerini saat değişkenime aldım. Daha sonrada aldığım bu değerleri if yapısında karşılaştırma yaptırarak, uygun olan mesajı alert komutu ile verdirdim.</p>
+<p>Birde yine diğer programlama dillerinde olduğu gibi java scriptte de ternary
+  operatörü vardır. Mantık yine tamamen aynıdır. if kontrol deyiminin yaptığı işlemi tek satırda yapmamızı sağlar. Genellikle kıyaslama işlemlerinde hızlıca ve yerden tasarruf etmek için kullanılır fakat kodlarda karmaşa yarattığı düşünüldüğü için pek tercih edilmez. Okunabilirliği azaltır çünkü. Şahsen bende pek kullanmayı tercih etmiyorum. Yine de biz kullanımını örnekleyelim.</p>
+<textarea style="height:100px">
+  <script type="text/javascript">
+  (şart)? şart doğru ise çalışacak kodlar burada olur :  Şart yanlış ise de çalışacak kodlar burada yer alır
+  </script>
+</textarea>
+<p>Bununla alakalı bir örnek yapalım. Kullanıcıdan bir sayı girmesini isteyelim ve bu sayı eğer çift ise ekrana çift sayı, tek ise de ekrana tek sayı yazdıralım. Ama ternary operatörü ile yapacağız.</p>
+<textarea style="height:100px">
+  <script type="text/javascript">
+  var sayi = prompt("Bir sayı giriniz");
+  (sayi % 2 == 0)? alert("Girdiğiniz sayı çifttir") : alert("Girdiğiniz sayı tektir")
+  </script>
+</textarea>
+<p><b>Switch Deyimi</b> : Birden fazla koşullu durumlar olduğunda tercih edilebilir, bu yapı gerekli kontrolleri yapar fakat şartın boolean bir ifade döndürmesine bakmaz.Değer kısmına yazılan ile kontrol ifadesinin aynı olup olmamasını kontrol eder.</p>
+<p>Switch kullanımında dikkat etmemiz gereken en önemli husus, case ifadesi içerisinde kodlarımızı yazdıktan sonra bir diğer case ifadesine geçiş yaparken break komutu kullanma zorunluluğudur. Yapı olarak aşağıdaki gibidir:</p>
+<textarea style="height:550px">
+  <script type="text/javascript">
+  switch(değer)
+  {
+      case "1. kontrol ifademiz" :
+      ilgili ifadeye eşit ise çalışacak kodlar
+      break;
+
+      case "2. kontrol ifademiz" :
+      ilgili ifadeye eşit ise çalışacak kodlar
+      break;
+
+      case "3. kontrol ifademiz" :
+      ilgili ifadeye eşit ise çalışacak kodlar
+      break;
+
+      case "4. kontrol ifademiz" :
+      ilgili ifadeye eşit ise çalışacak kodlar
+      break;
+
+      case "5. kontrol ifademiz" :
+      ilgili ifadeye eşit ise çalışacak kodlar
+      break;
+
+      default:
+      üstteki ifadelerin hiçbiri sağlanmadığında çalışacak kodlar
+      break;
+  }
+
+  </script>
+</textarea>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="../image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="../image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>

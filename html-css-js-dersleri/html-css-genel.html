@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/makaleler.css" />
+<link rel="icon" type="image/png" href="image/icon.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<title>HTML5 ve CSS Üzerine Genel Bilgiler</title>
+</head>
+
+<body>
+<div class="ev">
+<div class="cati">
+<div class="banner"></div>
+<div class="menu">
+<nav>
+<li><a href="index.html" class="selected">Anasayfa</a></li>
+<li><a href="html-dersleri/index.html">Html5</a></li>
+<li><a href="css-dersleri/index.html">Css</a></li>
+<li><a href="js-dersleri/index.html">Javacsript</a></li>
+<li><a href="hakkimda.html">Hakkımda</a></li>
+</nav></div>
+</div>
+<div class="menu-cizgi"></div>
+<div class="salon">
+<div class="makale-resim">
+<img src="image/html5css3.png" width="500" height="300px" />
+</div>
+<div class="makale-icerik">
+<h2>HTML5 ve CSS Üzerine Genel Bilgiler</h2>
+<p>Web Programlama dersimizin 101 bölümünde HTML ile ilgili temel bilgileri öğrendiniz. Artık HTML5 ve CSS ile uğraşmaya başlama zamanı...</p>
+
+<p>Bir web sayfası oluşturmak için ihtiyacımız olan bileşenlerden ikisi, HTML5 ve CSS'tir. HTML5 ile temel yapıyı tanımlarken, CSS ile kullanıcı arayüzünü oluşturup, stil, biçim ve sunumları hazırlarsınız. Bu bileşenlerden ilki olan HTML5'e bakalım.</p>
+<h3>HTML 5 Nedir ?</h3>
+<p>HTML5, bildiğiniz gibi HTML standardının en son sürümüdür ve en az önümüzdeki 10 yıl boyunca bu konuda ağırlığını sürdüreceği öngörülmektedir. Basit bir yazım kuralları (syntax) ve yeni eklenen özelliklerle daha kolay web tasarımı, daha hızlı ve etkili web sayfalarının hazırlanması amaçlanmıştır.</p>
+<p>Eski HTML'de kullandığımız etiketlerin hemen hepsini, HTML5'te de kullanabilirsiniz. Ses ve video oynatma özelliği, Geolocation API'ları, Bölgesel Depolama, Sürükle Bırak (Drag & Drop), yeni input etiketi, yeni canvas elemanı, yeni semantik-yapısal elemanlar ve tarayıcı desteği, HTML5 ile gelen temel yeni özelliklerdir. Bu yeni özellikleri bu eğitim içeriğinde bulabilirsiniz.</p>
+<p>Bilinmesi gereken önemli nokta, tüm tarayıcı sürümlerinin HTML5'i desteklemediğidir. HTML5 ile çalışmaya başlamadan önce web tarayıcınızı en güncel sürüme güncellemenizi, size şiddetle tavsiye ediyoruz!</p>
+<p>Android, iOS, Windows Phone gibi yaygın mobil platformların web tarayıcıları HTML5'in işlevsetlerini farklı seviyelerde desteklemektedir. Genel bir yaklaşım olarak, açık kaynak kodlu ve özgür tarayıcıların bu yeni standardı daha yüksek bir başarımla desteklediklerini söyleyebiliriz.</p>
+<h3>CSS Nedir ?</h3>
+<p>CSS, Cascading Style Sheets (Basamaklı Biçim Sayfaları) ifadesinden oluşturulmuş bir kısaltmadır. Biçimler (style), HTML elemanlarının nasıl görüntüleneceğini tanımlar. HTML'de, bir belgeyi biçimlendirmek için kullanılabilecek etiketler mevcut değildir çünkü HTML etiketleri, bir belgenin içeriğini tanımlamak için kullanılır. CSS öğrenmeye başlarken önkoşul, temel düzeyde HTML bilgisine sahip olunmasıdır.</p>
+</div>
+</div>
+<div class="bodrum">
+<div class="bodrum-cizgi"></div>
+<div class="telif">
+<h2 style="color:#F88C00;">@2016     Contact abdullahcelik6@gmail.com</h2>
+</div>
+<div class="iletisim">
+<center>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="image/facebook.png" /></a>
+<a href="https://www.facebook.com/Abdullahcelik123" target="_blank"><img src="image/twitter.png"  /></a>
+<a href="https://www.instagram.com/abdullahceliik" target="_blank"><img src="image/instagram.png" /></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+/*menünün üstten 210 px indikten sonra gösterilmeye devam etmesi*/
+$("document").ready(function($){
+
+    var nav = $(".menu");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 210) {
+            nav.addClass("f-menu-ul");
+        } else {
+            nav.removeClass("f-menu-ul");
+        }
+    });
+});
+</script>
+</html>
